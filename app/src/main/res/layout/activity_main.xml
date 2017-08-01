@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.raffos.blackjack.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/dealerPanel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/dealerCard1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ace_of_clubs" />
+
+        <ImageView
+            android:id="@+id/dealerCard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ace_of_diamonds" />
+
+        <ImageView
+            android:id="@+id/dealerCard3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:visibility="gone"
+            app:srcCompat="@drawable/eight_of_hearts" />
+
+        <ImageView
+            android:id="@+id/dealerCard4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ace_of_diamonds" />
+
+        <ImageView
+            android:id="@+id/dealerCard5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:visibility="gone"
+            app:srcCompat="@drawable/eight_of_clubs" />
+
+        <ImageView
+            android:id="@+id/dealerCard6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11"
+            android:visibility="gone"
+            app:srcCompat="@drawable/eight_of_clubs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dealerCardTotal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/dealerTotalText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/playerPanel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/playerCard1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ace_of_clubs" />
+
+        <ImageView
+            android:id="@+id/playerCard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ace_of_diamonds" />
+
+        <ImageView
+            android:id="@+id/playerCard3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/eight_of_hearts" />
+
+        <ImageView
+            android:id="@+id/playerCard4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ace_of_diamonds" />
+
+        <ImageView
+            android:id="@+id/playerCard5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/eight_of_clubs" />
+
+        <ImageView
+            android:id="@+id/playerCard6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:srcCompat="@drawable/eight_of_clubs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerCardTotal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playerTotalText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/hitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hit" />
+
+        <Button
+            android:id="@+id/standBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stand" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
